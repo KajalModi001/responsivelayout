@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    display: flex;
+    background-color: #3781db;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.links
+{
+    width: 40%;
+    display: flex;
+    padding-top: 2.5%;
+}
+.mailicon
+{
+    padding-left: 2%;
+}
+.mailid
+{
+    padding-left: 1%;
+}
+.locationicon
+{
+    padding-left: 2%;
+}
+.location
+{
+    padding-left: 1%;
+}
+.contacticon
+{
+    padding-left: 2%;
+}
+.contact
+{
+    padding-left: 1%;
+}
+.links a
+{
+    color: white;
+    text-decoration: none;
+}
+.blank
+{
+    width: 20%;
+}
+.logosection
+{
+    display: flex;
+    justify-content: center;
+}
+.logo
+{
+    width: 50%;
+}
+.social-links
+{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 2.7%;
+    color: white;
+}
+.facebook-icon
+{
+    cursor: pointer;
+}
+.instagram-icon
+{
+    cursor: pointer;
+}
+.header-title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #21497a;
+}
+.title-main
+{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+}
+.section-div
+{
+    width: 100%;
+    display: flex;  
+}
+.banner-text
+{
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    transform: translate(5%, 5%);
+    font-size: 3.5em;
+    color: #a6c4e9;  
+}
+.slider
+{
+    /* background-color: yellow; */
+    padding-top: 34%;
+    background-image: url(./images/banner2.png);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    display: flex;
+    flex-basis: 100%;
+}
+.our-service
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #3781db;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+}
+.servicediv
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    gap: 1%; 
+    background-color: bisque;
+}
+.service
+{
+    width: 30vw;
+    height: 50vh;
+    border: solid ;
+    border-radius: 2%;
+    box-shadow: 0.5px 0.5px 2px 4px royalblue;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .links
+    {
+        /* width: 90%;
+        font-size: 0.8em; */
+        display: none;
+    }
+   .servicediv
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .service
+   {
+    width: 70vw;
+    margin-left: 12%;
+   }
+   
+    .social-links {
+        /* justify-content: flex-start;
+        padding-left: 2.3%; */
+        display: none;
+    }
+    .title-main
+    {
+        font-size: 1.5em;
+    }
+    .banner-text
+    {
+        font-size: 1em;
+        top: 28%;
+        left: 26%;
+        text-align: start;
+        display: none;
+    }
+    .our-service
+    {
+        font-size: 2em;
+    }
+    .logo
+    {
+        width: 100%;
+    }
+}
+
